@@ -1,6 +1,6 @@
 <?php
 
-namespace anpu\Providers;
+namespace Anpu\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'anpu\Model' => 'anpu\Policies\ModelPolicy',
+        'Anpu\Model' => 'Anpu\Policies\ModelPolicy',
     ];
 
     /**

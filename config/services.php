@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => anpu\User::class,
+        'model' => Anpu\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

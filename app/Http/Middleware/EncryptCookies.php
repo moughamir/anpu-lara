@@ -1,6 +1,6 @@
 <?php
 
-namespace anpu\Http\Middleware;
+namespace Anpu\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

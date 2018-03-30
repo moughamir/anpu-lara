@@ -1,6 +1,6 @@
 <?php
 
-namespace anpu;
+namespace Anpu;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

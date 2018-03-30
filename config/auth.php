@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => anpu\User::class,
+            'model' => Anpu\User::class,
         ],
 
         // 'users' => [

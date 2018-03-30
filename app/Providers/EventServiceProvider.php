@@ -1,6 +1,6 @@
 <?php
 
-namespace anpu\Providers;
+namespace Anpu\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'anpu\Events\Event' => [
-            'anpu\Listeners\EventListener',
+        'Anpu\Events\Event' => [
+            'Anpu\Listeners\EventListener',
         ],
     ];
 

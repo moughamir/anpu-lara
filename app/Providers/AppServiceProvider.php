@@ -1,6 +1,6 @@
 <?php
 
-namespace anpu\Providers;
+namespace Anpu\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

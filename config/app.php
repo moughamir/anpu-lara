@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'anpu'),
+    'name' => env('APP_NAME', 'Anpu Design'),
 
     /*
     |--------------------------------------------------------------------------
@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        anpu\Providers\AppServiceProvider::class,
-        anpu\Providers\AuthServiceProvider::class,
-        // anpu\Providers\BroadcastServiceProvider::class,
-        anpu\Providers\EventServiceProvider::class,
-        anpu\Providers\RouteServiceProvider::class,
+        Anpu\Providers\AppServiceProvider::class,
+        Anpu\Providers\AuthServiceProvider::class,
+        // Anpu\Providers\BroadcastServiceProvider::class,
+        Anpu\Providers\EventServiceProvider::class,
+        Anpu\Providers\RouteServiceProvider::class,
 
     ],
 

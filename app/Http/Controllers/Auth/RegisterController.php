@@ -1,9 +1,9 @@
 <?php
 
-namespace anpu\Http\Controllers\Auth;
+namespace Anpu\Http\Controllers\Auth;
 
-use anpu\User;
-use anpu\Http\Controllers\Controller;
+use Anpu\User;
+use Anpu\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \anpu\User
+     * @return \Anpu\User
      */
     protected function create(array $data)
     {

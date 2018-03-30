@@ -25,7 +25,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    The Anpu
+                    The Anpu Design
                 </div>
 
                 <div class="links">

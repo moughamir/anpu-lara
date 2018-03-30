@@ -1,6 +1,6 @@
 <?php
 
-namespace anpu\Exceptions;
+namespace Anpu\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

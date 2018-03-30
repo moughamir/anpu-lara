@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use MongoDB\Client as Mongo;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('shops', function(Request $request){
+    $collection = (new Mongo)->shops->shops;
+    return $collection->find()->toArray();
+});

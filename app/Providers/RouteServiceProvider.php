@@ -1,6 +1,6 @@
 <?php
 
-namespace anpu\Providers;
+namespace Anpu\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'anpu\Http\Controllers';
+    protected $namespace = 'Anpu\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
