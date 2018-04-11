@@ -1,17 +1,16 @@
 @charset "utf-8";
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700,800');
-// Variables
-@import "variables";
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
 
 /* CSS Document */
 
 /******************************
+
 COLOR PALETTE
+
+
+
+
 [Table of Contents]
+
 1. Fonts
 2. Body and some general stuff
 3. Header
@@ -42,11 +41,11 @@ COLOR PALETTE
 1. Fonts
 ***********/
 
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700,800');
 
 @font-face {
   font-family: 'Myriad Pro Regular';
-  src: url('../fonts/myriad-pro-regular.ttf') format("truetype"), url('../fonts/MyriadPro-Regular.otf') format("opentype");
+  src: url('../fonts/myriad-pro-regular.ttf') format("truetype"), url('../fonts/myriad-pro-regular.otf') format("opentype");
 }
 
 /*********************************
@@ -135,7 +134,7 @@ p a {
 
 ::selection {
   background: #fde0db;
-  color: $primary;
+  color: #ff4200;
 }
 
 p::selection {
@@ -260,7 +259,7 @@ section {
 .button {
   width: 187px;
   height: 66px;
-  background: $primary;
+  background: #ff4200;
   overflow: hidden;
 
   a {
@@ -335,7 +334,6 @@ section {
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
-  box-shadow: 0 -12px 18px $anpu-dark;
 }
 
 /*********************************
@@ -355,13 +353,6 @@ section {
     font-weight: 700;
     color: #171717;
     text-transform: uppercase;
-    img{
-      width: 76px;
-      height: auto;
-      background: $anpu-dark;
-      border-radius: 50%;
-      padding: 10px;
-    }
   }
 
   span {
@@ -369,12 +360,12 @@ section {
       position: absolute;
       top: 0;
       left: -5px;
-      color: $primary;
+      color: #ff4200;
       z-index: -1;
     }
 
     &:last-of-type {
-      color: $primary;
+      color: #ff4200;
     }
   }
 }
@@ -387,7 +378,7 @@ section {
   margin-right: -3px;
   height: 100%;
   flex-basis: 200%;
-  text-align: left;
+  text-align: right;
 }
 
 .nav_items {
@@ -397,9 +388,6 @@ section {
     display: inline-block;
     margin-left: 35px;
     height: 100%;
-    &:nth-child(6){
-      float: right;
-    }
 
     a {
       font-size: 12px;
@@ -416,12 +404,12 @@ section {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 14px;
+      padding-right: 10px;
     }
 
     &.active, &:hover {
-      background: $primary;
+      background: #ff4200;
 
       a {
         color: #FFFFFF;
@@ -633,7 +621,7 @@ section {
       position: absolute;
       top: -1px;
       left: -5px;
-      color: $primary;
+      color: #ff4200;
       z-index: -1;
     }
   }
@@ -781,13 +769,13 @@ section {
   margin-right: -4px;
 
   &.active {
-    background: $primary;
+    background: #ff4200;
   }
 }
 
 .main_slider_custom_dot {
   &.active, &:hover {
-    background: $primary;
+    background: #ff4200;
   }
 }
 
@@ -823,7 +811,7 @@ section {
   }
 
   &:hover i {
-    color: $primary;
+    color: #ff4200;
   }
 }
 
@@ -837,7 +825,7 @@ section {
   right: 0px;
   width: auto;
   height: 74px;
-  background: $primary;
+  background: #ff4200;
   z-index: 11;
   padding-right: 38px;
   padding-left: 45px;
@@ -1018,7 +1006,7 @@ section {
   color: #1c1c1c;
 
   &::before {
-    background: $primary;
+    background: #ff4200;
   }
 }
 
@@ -1087,14 +1075,14 @@ section {
 .test_title {
   font-size: 15px;
   font-weight: 400;
-  color: $primary;
+  color: #ff4200;
   margin-top: -5px;
 }
 
 .test_quote {
   font-size: 30px;
   line-height: 1;
-  color: $primary;
+  color: #ff4200;
   font-style: italic;
   margin-top: 15px;
 }
@@ -1138,7 +1126,7 @@ section {
   z-index: 10;
 
   &:hover {
-    background: $primary;
+    background: #ff4200;
 
     i {
       color: #FFFFFF;
@@ -1147,7 +1135,7 @@ section {
 
   i {
     font-size: 18px;
-    color: $primary;
+    color: #ff4200;
   }
 }
 

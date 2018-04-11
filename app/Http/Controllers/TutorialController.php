@@ -16,7 +16,13 @@ class TutorialController extends Controller
     // get all tutorials
     public function getAll()
     {
-        return new TutorialResource(Tutorial::all());
+        $tuts = Tutorial::all();
+        $tab = array();
+        foreach($tuts as $i => $tut){
+            $tab[$i] = new TutorialResource($tut); 
+        }
+        
+        return $tab;
     }
 }
 
