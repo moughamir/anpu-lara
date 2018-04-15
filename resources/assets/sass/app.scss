@@ -1,12 +1,11 @@
 @charset "utf-8";
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700,800');
+
 // Variables
 @import "variables";
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
+@import '~summernote/dist/summernote-bs4';
+@import 'responsive';
 /* CSS Document */
 
 /******************************
@@ -42,7 +41,7 @@ COLOR PALETTE
 1. Fonts
 ***********/
 
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700,800');
 
 @font-face {
   font-family: 'Myriad Pro Regular';
@@ -56,6 +55,13 @@ COLOR PALETTE
 * {
   margin: 0;
   padding: 0;
+}
+.content {
+  padding: 1rem;
+}
+.feature {
+  display: flex;
+  padding: 1rem;
 }
 
 body {
@@ -705,15 +711,12 @@ section {
 .main_slider_shapes {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 16%;
   max-width: 25%;
   height: auto;
   z-index: 2;
+  filter: invert(50%);
 }
 
 .main_slider_item_bg {
@@ -837,7 +840,7 @@ section {
   right: 0px;
   width: auto;
   height: 74px;
-  background: $primary;
+  background: $anpu-dark;
   z-index: 11;
   padding-right: 38px;
   padding-left: 45px;

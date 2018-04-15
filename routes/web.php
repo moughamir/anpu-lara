@@ -42,3 +42,17 @@ Route::post('/submit', function (Request $request) {
 Route::get('/new', function () {
     return view('addTutorial');
 });
+
+//
+ 
+//summernote form 
+Route::view('/addArticle','submit');
+//summernote store route
+Route::post('/addArticle','ArticleController@store')->name('addArticlePersist');
+ 
+//summernote display route
+Route::get('/article_display','ArticleController@show')->name('articleDisplay');
+//get article by id
+Route::get('/a/{id}','ArticleController@show')->name('articleDisplay');
+//get article by slug
+Route::get('/{url}','ArticleController@show')->name('articleDisplay');
